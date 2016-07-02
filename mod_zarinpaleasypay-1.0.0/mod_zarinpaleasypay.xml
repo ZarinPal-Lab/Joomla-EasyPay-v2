@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_zarinpaleasypay</name>
+    <author>Mohsen Ranjbar (mimrahe)</author>
+    <authorEmail>mimrahe@gmail.com</authorEmail>
+    <version>2.0</version>
+    <description>MOD_ZARINPALEASYPAY_DESCRIPTION_XML</description>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename>mod_zarinpaleasypay.xml</filename>
+        <filename module="mod_zarinpaleasypay">mod_zarinpaleasypay.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <media folder="media" destination="mod_zarinpaleasypay">
+        <filename>default.png</filename>
+    </media>
+    <languages>
+        <language tag="fa-IR">language/fa-IR.mod_zarinpaleasypay.ini</language>
+        <language tag="fa-IR">language/fa-IR.mod_zarinpaleasypay.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="form"
+                       type="sql"
+                       default="1"
+                       label="MOD_ZARINPALEASYPAY_SELECT_FORM"
+                       query="SELECT id AS value, CONCAT( alias, ' ( ', amount, ' ', currency, ' )' ) AS form FROM #__zarinpaleasypay_forms"
+                       required="true"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

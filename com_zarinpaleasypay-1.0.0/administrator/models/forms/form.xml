@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="alias" type="text" size="100" filter="safehtml" required="true" label="COM_ZARINPALEASYPAY_FORM_LBL_FORM_ALIAS" description="COM_ZARINPALEASYPAY_FORM_DESC_FORM_ALIAS" hint="COM_ZARINPALEASYPAY_FORM_LBL_FORM_ALIAS"/>
+    <field name="description" default="some description about form will be shown to user" type="textarea" filter="safehtml" required="true" label="COM_ZARINPALEASYPAY_FORM_LBL_FORM_DESCRIPTION" description="COM_ZARINPALEASYPAY_FORM_DESC_FORM_DESCRIPTION" hint="COM_ZARINPALEASYPAY_FORM_LBL_FORM_DESCRIPTION"/>
+    <field name="amount" default="1000" required="true" label="COM_ZARINPALEASYPAY_FORM_LBL_FORM_AMOUNT" description="COM_ZARINPALEASYPAY_FORM_DESC_FORM_AMOUNT" hint="COM_ZARINPALEASYPAY_FORM_LBL_FORM_AMOUNT"/>
+    <field name="currency" default="rial" type="radio" required="true" label="COM_ZARINPALEASYPAY_FORM_LBL_FORM_CURRENCY" description="COM_ZARINPALEASYPAY_FORM_DESC_FORM_CURRENCY" hint="COM_ZARINPALEASYPAY_FORM_LBL_FORM_CURRENCY">
+      <option value="rial">COM_ZARINPALEASYPAY_FORMS_CURRENCY_OPTION_RIAL</option>
+      <option value="toman">COM_ZARINPALEASYPAY_FORMS_CURRENCY_OPTION_TOMAN</option>
+    </field>
+    <field name="callback_url" default="/index.php" type="text" size="300" filter="safehtml" label="COM_ZARINPALEASYPAY_FORM_LBL_FORM_CALLBACK_URL" description="COM_ZARINPALEASYPAY_FORM_DESC_FORM_CALLBACK_URL" hint="COM_ZARINPALEASYPAY_FORM_LBL_FORM_CALLBACK_URL"/>
+    <field name="image" type="media" filter="safehtml" label="COM_ZARINPALEASYPAY_FORM_LBL_FORM_IMAGE" description="COM_ZARINPALEASYPAY_FORM_DESC_FORM_IMAGE" hint="COM_ZARINPALEASYPAY_FORM_LBL_FORM_IMAGE"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+    <field name="filter_currency" type="list" onchange="this.form.submit();">
+      <option value="rial">COM_ZARINPALEASYPAY_FORMS_CURRENCY_OPTION_RIAL</option>
+      <option value="toman">COM_ZARINPALEASYPAY_FORMS_CURRENCY_OPTION_TOMAN</option>
+    </field>
+  </fieldset>
+</form>

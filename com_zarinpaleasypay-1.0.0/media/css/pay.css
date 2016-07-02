@@ -1,0 +1,120 @@
+.pay-containor, .pay-containor *{
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    margin:0;
+    padding:0;
+}
+.pay-zarinpal-header{
+    background: transparent radial-gradient(circle, rgb(177, 167, 54), rgb(72, 72, 56)) repeat scroll 0% 0% !important;
+}
+.pay-zarinpal-header img{
+    max-width:8% !important;
+    height:auto !important;
+    vertical-align: middle !important;
+    border:0 !important;
+}
+.pay-zarinpal-header h3{
+    font-size:18px !important;
+    line-height:75px !important;
+    display: inline-block !important;
+    color:white !important;
+    padding-right:20px !important;
+}
+.pay-form-header{
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+    background-color: rgb(243, 243, 243) !important;
+}
+.pay-form-header p{
+    color:rgb(0, 80, 90) !important;
+    line-height:30px !important;
+}
+.pay-form-header > div{
+    display: inline-block !important;
+    width:50% !important;
+}
+.pay-form-header > div:first-child{
+    text-align: left !important;
+    border-left:1px solid rgb(0, 201, 255) !important;
+    padding-left:10px !important;
+}
+.pay-form-header > div:first-child > h2{
+    line-height: 40px !important;
+    color:rgb(0, 141, 158) !important;
+}
+.pay-form-header > div:last-child{
+    float:left !important;
+    padding-right:10px !important;
+    text-align: right !important;
+    border-right:1px solid rgb(0, 201, 255) !important;
+    padding-top: 5px !important;
+}
+.pay-form-section{
+    padding-top:20px !important;
+    padding-bottom: 40px !important;
+    margin-bottom: 20px !important;
+    background-color: rgb(211, 221, 225) !important;
+}
+.pay-form-section *{
+    margin: 0 !important;
+}
+.pay-fieldset-1 label{
+    line-height: 40px !important;
+    display: inline-block !important;
+    padding-left: 10px !important;
+    width:100px !important;
+    text-align: left !important;
+    color: rgb(0, 135, 171) !important;
+}
+.pay-fieldset-1 input{
+    height:30px !important;
+}
+.pay-fieldset-1 textarea{
+    margin-top:6px !important;
+    line-height: 21px !important;
+    padding:5px !important;
+    padding-right:10px !important;
+    height:100px !important;
+}
+.pay-button{
+    text-align:center !important;
+    line-height: 30px !important;
+    padding-right:20px !important;
+    padding-left:20px !important;
+    background-color: rgba(0, 5, 18, 0.6) !important;
+    border:2px solid rgb(255, 207, 0) !important;
+    -webkit-border-radius:5px !important;
+    -moz-border-radius:5px !important;
+    border-radius:5px !important;
+    color: white !important;
+}
+.pay-button:hover{
+    background-color: rgb(255, 207, 0) !important;
+    border:2px solid rgba(0, 5, 18, 0.6) !important;
+    color: rgba(0, 5, 18, 0.6) !important;
+    font-weight:bolder;
+}
+.pay-gate{
+    padding-top:30px;
+    padding-bottom:20px;
+}
+.pay-gate h3{
+    line-height:50px;
+    color: rgb(0, 135, 171) !important;
+}
+.pay-gate label{
+    display: inline-block;
+    line-height:60px;
+    color: rgb(0, 135, 171) !important;
+}
+.pay-gate label[for=webgate]{
+    padding-left:5px;
+}
+.pay-gate label[for=zaringate]{
+    padding-right:5px;
+}
+.pay-gate-seperator{
+    width:20px;
+    display: inline-block;
+}
